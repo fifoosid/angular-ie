@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <ui5-title>Welcome to {{ title }}!</ui5-title>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<br /><br />
+
+<ui5-messagestrip type="Warning" no-close-button>
+  Adding more components? Check the sample page of the component and add the
+  corresponding import statement in `src/index.js`
+</ui5-messagestrip>
+<br /><br />
+
+<ui5-datepicker style="width: 150px"></ui5-datepicker>
+<br /><br />
+
+<ui5-button design="Positive" (click)="onclick()">Positive</ui5-button>
+<ui5-button design="Negative">Negative</ui5-button>
+<br /><br />
+
+<ui5-switch graphical checked></ui5-switch>
+<br />
+<ui5-button id="openDialogButton" (click)="openDialog()">Open Dialog</ui5-button>
+<ui5-dialog id="hello-dialog" header-text="Dialogs are easy!" #testDialog>
+  <div stype="padding: 2rem; display:flex; justify-content: center;">
+
+    <ui5-title>Hello World!</ui5-title> <br>
+    <ui5-button id="closeDialogButton" (click)="closeDialog()">Dismiss</ui5-button>
+  </div>
+</ui5-dialog>
+
