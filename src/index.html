@@ -3,12 +3,14 @@
 <head>
   <script src="webcomponents/webcomponents-loader.js"></script>
   <script>
-    if (!window.customElements){
-      document.write('<!--');
-    }
+    window.WebComponents = window.WebComponents || {};
+    window.WebComponents.root = 'node_modules/@webcomponents/webcomponentsjs/';
+
+    // if (!window.customElements){
+    //   document.write('<!--');
+    // }
   </script>
-  <script src="webcomponents/custom-elements-es5-adapter.js"></script>
-  <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
+  <!-- <script src="webcomponents/custom-elements-es5-adapter.js"></script> -->
 
   <meta charset="utf-8">
   <title>Ui5WebComponentsApplication</title>
